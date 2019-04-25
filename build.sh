@@ -1,14 +1,6 @@
 #!/usr/bin/env bash
-echo
-echo          _       _  _  ____               _
-echo   ___ __| |_ __ | || ||___ \   _ __   ___| |_
-echo  / __/ _` | '_ \| || |_ __) | | '_ \ / _ \ __|
-echo | (_| (_| | | | |__   _/ __/ _| | | |  __/ |_
-echo  \___\__,_|_| |_|  |_||_____(_)_| |_|\___|\__|
-echo
-echo
 
-if [ `which docker` ]; then
+if (which docker) ; then
     echo "-- [OK]: Docker Installed"
 
     echo "- Building Docker Image"

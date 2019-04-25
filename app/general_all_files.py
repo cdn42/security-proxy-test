@@ -1,6 +1,6 @@
 import generate_files as gf
 import os
-from config import compressed_types, doc_types
+from config import compressed_types, doc_types, csvdata
 
 def create_compressed (src_folder, output_folder, keyword = "compress_"):
 
@@ -25,11 +25,6 @@ def create_compressed (src_folder, output_folder, keyword = "compress_"):
 
 def create_documents (src_folder, output_folder):
 
-
-    csvdata = [
-        ['Header1', 'Header2', 'Header3'],
-        ['Some Data', 'Some More Data', 'Even More Data']
-    ]
 
     prefix = "gf.do_"
 

@@ -65,6 +65,12 @@ def generate_files():
 
 # Main Application Loop
 if __name__ == '__main__':
+
+    # Ensure an empty files directory exists
+    if not os.path.exists('/app/files'):
+        os.makedirs('/app/files')
+
+    # Let's go :)
     app.run(debug=True, host='0.0.0.0', port=9000)
 
 
