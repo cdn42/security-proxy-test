@@ -11,7 +11,7 @@ $ git clone https://github.com/cdn42/security-proxy-test.git
 
 $ cd security-proxy-test
 
-$ docker build --tag cdn42/sec-proxy-test .
+$ docker build --tag cdn42/security-proxy-test .
 
 $ docker run -d -p 9000:9000 --name security-proxy-test cdn42/security-proxy-test:latest
 
